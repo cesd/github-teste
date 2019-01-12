@@ -23,3 +23,11 @@ git commit -m "Add index.html" = Cria uma versao do arquivo (-m para avisar que 
 git log
 git log --decorate
 git log --author "Carlos"
+git log --graph
+
+git shortlog
+git shortlog -sn
+
+git show 44ac5068fbe633b748dfec36380e6af84aaa7957
+
+git diff

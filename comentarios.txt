@@ -1,0 +1,21 @@
+Estado dos arquivo:
+
+UNTRACKED
+O arquivo foi criado , mas ainda nao foi visto pelo git
+
+UNMODIFIED
+Depois que passa um arquivo para o git ele eh considerado unmodified
+
+MODIFIED
+Se vc editar esse arquivo ele passa a ser considerado modified
+
+STAGED
+Depois que modifica vc joga ele para o staged para criar uma versao
+
+Comandos
+
+git status = Mostra o estado dos aruivos
+
+git add nome_arquivo = Adiciona um arquivo
+
+git commit -m "Add index.html" = Cria uma versao do arquivo (-m para avisar que vai passar uma msg)

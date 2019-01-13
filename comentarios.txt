@@ -34,3 +34,5 @@ git show 44ac5068fbe633b748dfec36380e6af84aaa7957
 
 git diff
 git diff --name-only
+
+git checkout comentarios.txt

@@ -43,3 +43,17 @@ git reset HEAD (remove os arquivo da fila do stage, pos um add e antes do commit
 git reset --soft (reseta o commit para o stage)
 git reset --mixed (reseta o commit para modified)
 git reset --hard (reseta o commit todo)
+
+
+#Gerar key ssh
+ssh-keygen -t rsa -b 4096 -C "cesd.domingues@gmail.com"
+
+git remote add origin https://github.com/cesd/github-teste.git
+
+git remote
+git remote -vai
+
+git push -u origin master 
+
+
+#Subir uma modificação

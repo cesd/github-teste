@@ -20,6 +20,8 @@ git add nome_arquivo = Adiciona um arquivo
 
 git commit -m "Add index.html" = Cria uma versao do arquivo (-m para avisar que vai passar uma msg)
 
+git commit -am "editei comentarios"
+
 git log
 git log --decorate
 git log --author "Carlos"
@@ -31,3 +33,4 @@ git shortlog -sn
 git show 44ac5068fbe633b748dfec36380e6af84aaa7957
 
 git diff
+git diff --name-only

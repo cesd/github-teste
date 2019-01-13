@@ -35,4 +35,11 @@ git show 44ac5068fbe633b748dfec36380e6af84aaa7957
 git diff
 git diff --name-only
 
-git checkout comentarios.txt
+git checkout comentarios.txt (retorna uma modificacao antes do add)
+
+git reset HEAD (remove os arquivo da fila do stage, pos um add e antes do commit)
+
+#reset apos o commit
+git reset --soft (reseta o commit para o stage)
+git reset --mixed (reseta o commit para modified)
+git reset --hard (reseta o commit todo)

@@ -14,6 +14,9 @@ Depois que modifica vc joga ele para o staged para criar uma versao
 
 Comandos
 
+git config --global user.email "cesd.domingues@gmail.com"
+git config --global user.name "Carlos Domingues"
+
 git status = Mostra o estado dos aruivos
 
 git add nome_arquivo = Adiciona um arquivo
@@ -55,5 +58,54 @@ git remote -vai
 
 git push -u origin master 
 
+#Subir uma modificação com push
+git push origin master
 
-#Subir uma modificação
+#clonar repositorio
+git@github.com:cesd/github-teste.git
+git clone git@github.com:cesd/github-teste.git
+
+#fork (pega um projeto e faz uma cópia)
+
+#clone x fork
+clone: só consigo fazer para os repositorios que são meus de fato
+
+fork: Posso modificar um repósitorio que não é meu
+
+#branch
+É um ponteiro móvel que leva a um commit. Por padrão é branch master, mas eu posso ter outros branchs apontando para outros commits. Por que usar ?
+Vantagens: 
+-Posso modificar meus arquivos sem alterar o local principal
+-Facilmente desligável (deletado)
+-Múltiplas pessoas trabalhando. Um no master e os outros em outros branchs
+-Evita conflitos
+
+#Criando um branch
+git checkout -b testing 
+
+#ver brachs
+git branch (* é o branch em que estou no momento)
+
+#navegar entre branchs
+git checkout nome_branch
+
+#apagar branch (não posso estar nele)
+git branch -D nome_branch
+
+#merge (Depois de modificar um branch eu preciso uni-los)
+#pros
+-Operação não destrutiva, ele não vai destruir commit nenhum
+
+#contra
+-Commit extra para unir os outros
+-Deixa o histórico poluído
+
+#rebase
+#pros
+-Evita commits extras
+-Histórico linear
+
+#contra
+-Perco a ordem cronológica
+-Se eu mudo o histórico e tem outra pessoa trabalhando no memo branch ela não vai conseguir subir as coisas dela pq vai dar conflito 
+
